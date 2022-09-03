@@ -66,6 +66,7 @@
 /* our specials section styles */
 #ourSpecials {
   padding-top: 10rem;
+  margin-top: 2rem;
 }
 .ourSpecials__wrapper {
   display: flex;
