@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
 
-html {
+html,
+body {
   font-size: 10px;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 :root {
@@ -19,7 +20,8 @@ html {
 
 body {
   background-color: var(--lightGreen-2);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  position: relative;
 }
 
 section {
