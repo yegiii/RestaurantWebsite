@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <!-- Nav Section -->
+    <!--* Nav Section -->
     <div class="nav">
       <div class="container">
         <div class="nav__wrapper">
@@ -71,9 +71,74 @@
         </div>
       </div>
     </div>
-    <h1>This is Booking page!</h1>
+    <!--*End Nav Section -->
 
-    <!-- Footer -->
+    <!--* Booking section -->
+    <section id="form" data-aos="fade-up">
+      <div class="container">
+        <h3 class="form__title">Bool Table</h3>
+        <div class="form__wrapper">
+          <form>
+            <div class="form__group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="first_name" required />
+            </div>
+            <div class="form__group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="last_name" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form__group">
+              <label for="tableTable">Table Type</label>
+              <select name="table__type" id="tableType" required>
+                <option disabled selected>Choose</option>
+                <option value="small">Small (2 person)</option>
+                <option value="medium">Medium (4 person)</option>
+                <option value="larg">Larg (6 person)</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="guestNumber">Guest Number</label>
+              <input
+                type="tel"
+                id="guestNumber"
+                name="guest_number"
+                pattern="[+]{1}[0-9]{11,14}"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="placement">Placement</label>
+              <select name="placement" id="placement" required>
+                <option disabled selected>Choose</option>
+                <option value="outdoor">Outdoor</option>
+                <option value="indor">Indoor</option>
+                <option value="rooftop">Rooftop</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form__group">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+            <div class="form__group form__group__full">
+              <label for="note">Note</label>
+              <textarea name="note" id="note" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Booking Table</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--* End Booking section -->
+
+    <!--* Footer -->
     <footer>
       <div class="container">
         <div class="footer__wrapper">
@@ -210,8 +275,7 @@
         <p class="copyright__text">© 2022 AETN UK. All Rights Reserved.</p>
       </div>
     </div>
-
-    <!-- End Footer -->
+    <!--* End Footer -->
     <!-- aos Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- costum Js script -->
